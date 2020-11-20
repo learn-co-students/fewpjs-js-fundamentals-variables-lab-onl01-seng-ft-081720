@@ -4,7 +4,7 @@ const path = require('path')
 const babel = require('babel-core');
 
 const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
-
+// The varaibles of const will all return the same object and saved in the same location every time 
 describe('index.js', function () {
   describe('companyName', function () {
     it('is set as Scuber', function () {
